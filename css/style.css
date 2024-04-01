@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(213, 207, 219);
+}
+nav{
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    margin-bottom: 30px;
+    padding: 3px;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #032a31;
+    color: #fff;
+
+}
+h1{
+    width: 100%;
+    background-color: rgb(202, 216, 8);
+    text-align: center;
+    color: aliceblue;
+    margin: 10px;
+}
+
+#gran_contenedor{    
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    margin: 1%;
+}
+#contenedor_1{    
+    width: 34%;
+    height: auto;    
+    margin: 1%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    
+}
+
+#subcontenedor{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#contenedor_2{
+    width: 248%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 94vh;
+    background-color: blue;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 1%;
+    background-color: rgb(20, 20, 20);
+}
+
+#contenedor_3{
+    background-color: rgb(12, 12, 12);
+    width: 248%;
+    margin: 1%;
+    height: 52%;
+    box-sizing: border-box;
+    display: flex;
+    margin: 4px;
+    padding: 5px;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    
+}
+
+#botones{
+    width: 100%;
+}
+
+
+
+#contenedor_2 #imagenes{
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#cont_form{
+    display: grid;
+    
+    width: 100%;
+    justify-items: start;
+    align-items: center;
+    justify-content: start;
+    color: aliceblue;
+    justify-items: end;
+}
+
+button{
+    margin-top: 5px;
+    background-color: rgb(33, 47, 61 );
+    cursor: pointer;
+    border: none;
+    padding: 10px 22px;
+    width: 90%;    
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    color: rgb(218, 247, 166 );
+    
+}
+
+ol{
+    margin: 9px;
+    padding: 74px;
+    color: #fff;
+}
+
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cotiza tu vehiculo</h1>
+      
+    </header>
+    <nav>
+      <li>Daniel builes</li>
+      <li>Andrea Chavarriaga</li>
+      <li>Estefania gonzalez</li>
+    </nav>
+    <div id="gran_contenedor">     
+      <div id="subcontenedor">
+      <div id="contenedor_2">
+    <section id="imagenes">
+      <img src="./img/carro_1.jpg" alt="img" id="imgid">
+      <section class="botones">
+        <input type="button" onclick="cambiarimg('./img/carro_1.jpg')" value="|<">        
+        <input type="button" onclick="cambiarimg('./img/carro_2.jpg')" value=">|">
+      </section>   
+     </section>      
+    </div>
+    <div id="contenedor_3">
+      <div id="cont_form">
+        
+      
+        <label for="vlrNeto">
+          <p>Valor sin papeles</p>
+        </label>
+        <input type="number" name="vlrNeto" id="vlrNeto">
+        <label for="soat">
+          <p>Valor del Soat</p>
+        </label>
+        <input type="number" name="soat" id="soat">
+        <section class="boton">
+          <button type="button" id="cotizar">Cotizar</button>
+        </section>
+        <p>El valor del vehiculo con soat es: </p> <span id="vlrConSoat">000</span> 
+        <p>El valor del seguro es: </p> <span id="vlrSeguro">000</span>
+        <p>IVA del 19%</p> <span id="iva">000</span>
+        <label for="vlrMatricula">
+          <p>Valor de la matricula</p>
+        </label>
+        <input type="number" name="vlrMatricula" id="vlrMatricula">
+        <section class="boton_2">
+          <button type="button" onclick="valorTotal()" id="calcuTotal">Calcular</button>
+        </section>
+        <p>Valor total vehiculo</p> <span id="vlrTotal">000</span>
+        <section class="boton_3">
+          <button type="button" onclick="reiniciarCalculo()">Reiniciar</button>
+        </section>
+        <p>
+          
+        </p>
+      </div>
+      <ol>
+        <li>El valor con soat, es la suma del valor neto del vehiculo mas el valor del soat</li>
+        <li>El valor del seguro equivale al 5% del valor neto del vehiculo</li>
+        <li>El IVA es el 19% del valor neto del vehiculo</li>
+        <li>La matricula es el valor que pone el vendedor</li>
+        <li>El valor total es la suma de todas las funciones</li>
+      </ol>
+    </div>
+  </div>  
+  </body>
+  
+  <script src="./js/cotizador.js"></script>
+</html>
